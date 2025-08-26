@@ -6,7 +6,7 @@ import tkinter as tk
 window = tk.Tk()
 
 
-# configures the row & column when  its expanded and minimum size is 50 pixel
+# configures the row & column when its expanded and minimum size is 50 pixel
 window.rowconfigure(0, weight= 1, minsize= 50)
 window.columnconfigure([0, 1, 2], weight= 1, minsize = 50)
 
