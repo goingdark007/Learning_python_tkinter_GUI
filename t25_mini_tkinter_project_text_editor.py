@@ -32,6 +32,8 @@ def open_file():
 
 def save_file():
     """Save the current file as a new file."""
+    # asksaveasfilename is a method that opens the file explorer dialog to create new or overwrite a file
+    # filetypes specifies text file and any file can be chosen
     filepath = asksaveasfilename(
         defaultextension=".txt",
         filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")],
@@ -45,6 +47,7 @@ def save_file():
         text = txt_edit.get("1.0", tk.END)
         # writes the texts in a new file or saves it in an existing file
         output_file.write(text)
+    # Changing the window title to show the file location
     window.title(f"Simple Text Editor - {filepath}")
 
 
