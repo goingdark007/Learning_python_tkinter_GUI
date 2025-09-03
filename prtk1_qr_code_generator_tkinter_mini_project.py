@@ -27,6 +27,8 @@ def get_qr_code():
     # Calls the show_qr function to show the updated qr code in a new window
     show_qr()
     lbl_data.config(text="✅ QR code generated successfully", fg="green")
+    # clears the entry field after generating qr code
+    etr_data.delete(0, tk.END)
 
 
 # This function creates a new window and displays the qr code image
