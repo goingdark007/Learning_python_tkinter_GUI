@@ -4,6 +4,7 @@ from tkinter import filedialog  # imports filedialog submodule for file saving
 import os  # imports system
 from PIL import ImageTk  # Pillow library allows tkinter to display png and jgp files
 
+
 # Declaring a variable to store the qr code image and use it in multiple functions
 qr_img = None
 
